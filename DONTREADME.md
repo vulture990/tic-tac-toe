@@ -1,2 +1,2 @@
 # demo 
-What s up (just didn t no what to write on the first trial) oups my bad
+What s up (just didn t know what , how,where... lol lmao to write on the first trial) oups my bad
