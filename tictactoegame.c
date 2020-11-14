@@ -40,8 +40,6 @@ int main(void)
         printf("==>\aPlayer %d win ", --player);
     else
         printf("==>\aGame draw");
-
-    return 0;
 }
 void drawboard(void)
 {
