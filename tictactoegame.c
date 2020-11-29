@@ -32,7 +32,6 @@ int main(void)
 
       player++;
       
-      return 0;  
     }
     while (gameStatus == -1);
 
