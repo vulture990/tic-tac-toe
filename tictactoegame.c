@@ -1,6 +1,7 @@
 #include<stdio.h.>
 #include<conio.h>
 #include<stdlib.h>
+
 char square[9]={'1','2','3','4','5','6','7','8','9'};
 int choice,player;
 void instruction(void);
@@ -43,6 +44,29 @@ int main(void)
 void drawboard(void)
 {
     system("cls");
+    int rows=13, a, b, space;
+	
+	// Print first half of the triangle.
+	space = rows - 1;
+	for ( b = 1 ; b <= rows ; b++ ) {
+		for ( a = 1 ; a <= space ; a++ )
+			printf(" ");
+		space--;
+		for ( a = 1 ; a <= 2*b-1 ; a++)
+			printf("*");
+		printf("\n");
+	}
+	
+	// Print second half of the triangle.
+	space = 1;
+	for ( b = 1 ; b <= rows - 1 ; b++ ) {
+		for ( a = 1 ; a <= space; a++)
+			printf(" ");
+		space++;
+		for ( a = 1 ; a <= 2*(rows-b)-1 ; a++ )
+			printf("*");
+		printf("\n");
+	}
     printf("#############################################\n#              INSTRUCTIONS :                #\n# I)X for player 1.  #\n# II)O for player 2    #\n##############################################");
     printf("\nPlayer1(X) vs Player2(O):\n _________________");
     printf("________________\n|____%c_____|_____%c_____|____%c_____|\n|____%c_____|_____%c_____|____%c_____|\n|____%c_____|_____%c_____|____%c_____|",square[0],square[1],square[2],square[3],square[4],square[5],square[6],square[7],square[8],square[9]);
