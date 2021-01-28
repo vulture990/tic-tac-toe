@@ -1,5 +1,4 @@
-#include<stdio.h.>
-#include<conio.h>
+#include<stdio.h>
 #include<stdlib.h>
 
 char square[9]={'1','2','3','4','5','6','7','8','9'};
@@ -43,7 +42,6 @@ int main(void)
 }
 void drawboard(void)
 {
-    system("cls");
     int rows=13, a, b, space;
 	
 	// Print first half of the triangle.
@@ -113,7 +111,7 @@ void placementofxando(char XorO)
     {
         printf("Incorrect move !");
         player--;
-        getch();
+        getchar();
     }
 }
 int checkwins(void)
